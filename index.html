@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gumroad Rating</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="container mx-auto px-4 text-left font-sans p-4 w-full md:w-4/5 lg:w-2/5 divide-y">
+      <div class="header p-4">
+        <!-- <h1 class="text-3xl font-bold tracking-tight">{{product.name}}</h1> -->
+        <h1 class="text-4xl font-bold tracking-tighter">The Minimalist Entrepreneur</h1>
+      </div>
+      <div class="post">
+        <div class="text">Thanks for rating us!</div>
+        <div class="edit">EDIT</div>
+      </div>
+      <div class="rating flex my-4 justify-between">
+        <div class=" flex-none p-4">
+          <p class="inline text-3xl tracking-tight" id='rating-value'>3.8</p>
+          <div class="star-widget float-right text-2xl pl-2">
+            <i class="rating__star far fa-star"></i>
+            <i class="rating__star far fa-star"></i>
+            <i class="rating__star far fa-star"></i>
+            <i class="rating__star far fa-star"></i>
+            <i class="rating__star far fa-star"></i>
+          </div>
+          <form action="#">
+            <header></header>
+            <div class="textarea">
+              <textarea cols="30" placeholder="Describe your experience.."></textarea>
+            </div>
+            <div class="btn">
+              <button type="submit">Post</button>
+            </div>
+          </form>
+        </div>
+        <div class="flex items-center float-right">
+          <button class="justify-center rounded-lg px-4 py-2 hover:bg-gray-100 duration-300 border-2 btn">Add
+            Review
+          </button>
+        </div>
+      </div>
+      <!--- REVIEWS SECTION -->
+      <div class="">
+        <h3 class="p-4 text-2xl font-bold tracking-tighter">Reviews</h3>
+        <div class="rating flex px-4">
+          <div class=" flex-none">
+            <div class="star-widget float-right pl-2">
+              <i class="rating__star fas fa-star"></i>
+              <i class="rating__star fas fa-star"></i>
+              <i class="rating__star fas fa-star"></i>
+              <i class="rating__star fas fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+            </div>
+            <p class="inline font-bold" id='rating-value'>4</p>
+          </div>
+          <p class="inline pl-4">book was full of fluff book was full of fluff book was full of fluff book was full</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
